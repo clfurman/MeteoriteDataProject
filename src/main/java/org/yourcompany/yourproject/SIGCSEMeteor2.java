@@ -14,9 +14,9 @@ import java.util.Scanner;
  */
 public class SIGCSEMeteor2 {
 
-    public static ArrayList<MeteorRecord> readData (String filename)
+    public static ArrayList<Meteor> readData (String filename)
     {
-        ArrayList<MeteorRecord> meteors = new ArrayList <MeteorRecord>();
+        ArrayList<Meteor> meteors = new ArrayList <Meteor>();
 
         File dataFile = new File (filename);
 
@@ -37,7 +37,7 @@ public class SIGCSEMeteor2 {
                 if (data.length > 9 )
                 {
                                  
-                MeteorRecord m = new MeteorRecord (data[0], Integer.parseInt(data[1]), data[2], data[3], 
+                Meteor m = new Meteor (data[0], Integer.parseInt(data[1]), data[2], data[3], 
                                               Double.parseDouble(data[4]), data[5], data[6], 
                                                 new GeoLocation (Double.parseDouble(data[7]), Double.parseDouble(data[8])));
                 
@@ -64,8 +64,8 @@ public class SIGCSEMeteor2 {
     public static void main(String[] args) {
         System.out.println ("Hi!");
 
-        ArrayList <MeteorRecord> myMeteors = readData ("C:\\Users\\Crystal Furman\\SIGCSEMeteor2\\src\\main\\java\\org\\yourcompany\\yourproject\\Meteorite_Landings.csv");
-        ArrayList <MeteorRecord> lowMassMeteors = new ArrayList<MeteorRecord>();
+        ArrayList <Meteor> myMeteors = readData ("C:\\Users\\Crystal Furman\\SIGCSEMeteor2\\src\\main\\java\\org\\yourcompany\\yourproject\\Meteorite_Landings.csv");
+        ArrayList <Meteor> lowMassMeteors = new ArrayList<Meteor>();
         System.out.println ("All done reading");
         for (int i = 0; i < 10 && i < myMeteors.size(); i++)
         {
