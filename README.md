@@ -12,4 +12,5 @@
    Since the GeoLocation contains the latitude and longitude values, we don't actually need to store the latitude and longitude values separately.
    You only need to store 8 fields.
 6. Create the GeoLocation record. It will contain 2 fields. Save the file as GeoLocation.java
-7. If you need to see the solution files, navigate to the Solution_Files branch.
+7. Use the runner class, SIGCSEMeteor2.java to import the data and add the meteors with a mass less than 5000 to a new list. ​
+8. If you need to see the solution files, navigate to the Solution_Files branch.
