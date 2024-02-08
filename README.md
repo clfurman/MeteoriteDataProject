@@ -2,7 +2,9 @@
 <img width="300" alt="image" src="https://github.com/clfurman/MeteoriteDataProject/assets/65421044/9450db2e-9012-4e02-9a40-74a0f5c08571">
 
 2. Download the files located in the starter_files section. You will need to extract them and save them on your computer.
-3. Open Visual Studio Code
+   <img width="700" alt="image" src="https://github.com/clfurman/MeteoriteDataProject/assets/65421044/ff4bdf64-b9a7-472f-a161-122a9b425711">
+
+4. Open Visual Studio Code
 5. Open the Meteorite_Landings.csv file and identify the fields you will need to represent in your Meteor record and GeoLocation record.
 6. NOTE: each row represents an individual meteor and each column represents the data we know about the meteor.
    This data is <bold>immutable data </bold>. Therefore a record is the correct type of storage. 
